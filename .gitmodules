@@ -3,7 +3,7 @@
 	url = https://github.com/wix/homebrew-brew
 [submodule "ObjCCLIInfra"]
 	path = ObjCCLIInfra
-	url = https://github.com/wix/ObjCCLIInfra.git
+	url = https://github.com/LeoNatan/LNCLIInfra.git
 [submodule "fmdb"]
 	path = fmdb
 	url = https://LeoNatan@github.com/ccgus/fmdb.git
