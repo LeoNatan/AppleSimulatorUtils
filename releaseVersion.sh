@@ -52,7 +52,7 @@ echo -e "\033[1;34mCreating a compressed tarball of the source\033[0m"
 SRC_TGZ_FILE="AppleSimulatorUtils-${VERSION}.tar.gz"
 
 mkdir -p build
-tar --exclude="releaseVersion.sh" --exclude=".git" --exclude="build" --exclude="bottle" --exclude "_tmp_release_notes.md" --exclude=".github" --exclude="homebrew-brew" -cvzf "build/${SRC_TGZ_FILE}" .
+tar --exclude="releaseVersion.sh" --exclude=".git" --exclude="build" --exclude="bottle" --exclude "_tmp_release_notes.md" --exclude=".github" --exclude="homebrew-tap" -cvzf "build/${SRC_TGZ_FILE}" .
 
 echo -e "\033[1;34mCreating Homebrew bottles"
 
@@ -74,13 +74,13 @@ popd
 
 echo -e "\033[1;34mUpdating applesimutils.rb with latest hashes\033[0m"
 
-cd homebrew-brew
+cd homebrew-tap
 
 git checkout master
 git fetch
 git pull --rebase
-sed -i '' -e 's/^\ \ url .*/\ \ url '"'https:\/\/github.com\/wix\/AppleSimulatorUtils\/releases\/download\/${VERSION}\/${SRC_TGZ_FILE}'"'/g' applesimutils.rb
-sed -i '' -e 's/^\ \ \ \ root\_url .*/\ \ \ \ root\_url '"'https:\/\/github.com\/wix\/AppleSimulatorUtils\/releases\/download\/${VERSION}'"'/g' applesimutils.rb
+sed -i '' -e 's/^\ \ url .*/\ \ url '"'https:\/\/github.com\/LeoNatan\/AppleSimulatorUtils\/releases\/download\/${VERSION}\/${SRC_TGZ_FILE}'"'/g' applesimutils.rb
+sed -i '' -e 's/^\ \ \ \ root\_url .*/\ \ \ \ root\_url '"'https:\/\/github.com\/LeoNatan\/AppleSimulatorUtils\/releases\/download\/${VERSION}'"'/g' applesimutils.rb
 sed -i '' -e 's/^\ \ sha256 .*/\ \ sha256 '"'"$(shasum -b -a 256 ../build/${SRC_TGZ_FILE} | awk '{ print $1 }')"'"'/g' applesimutils.rb
 
 for BOTTLE in "${BOTTLES[@]}"
@@ -106,16 +106,16 @@ git push --tags
 
 echo -e "\033[1;34mCreating a GitHub release\033[0m"
 
-gh release create --repo wix/AppleSimulatorUtils "$VERSION" --title "$VERSION" --notes-file "${RELEASE_NOTES_FILE}"
+gh release create --repo LeoNatan/AppleSimulatorUtils "$VERSION" --title "$VERSION" --notes-file "${RELEASE_NOTES_FILE}"
 
 echo -e "\033[1;34mUploading attachments to release\033[0m"
 
-gh release upload --repo wix/AppleSimulatorUtils "$VERSION" "build/${SRC_TGZ_FILE}#$(basename ${SRC_TGZ_FILE})"
+gh release upload --repo LeoNatan/AppleSimulatorUtils "$VERSION" "build/${SRC_TGZ_FILE}#$(basename ${SRC_TGZ_FILE})"
 
 for BOTTLE in "${BOTTLES[@]}"
 do	
 	BOTTLE_TGZ_FILE="applesimutils-${VERSION}.${BOTTLE}.bottle.tar.gz"
-	gh release upload --repo wix/AppleSimulatorUtils "$VERSION" "bottle/${BOTTLE_TGZ_FILE}#$(basename ${BOTTLE_TGZ_FILE})"
+	gh release upload --repo LeoNatan/AppleSimulatorUtils "$VERSION" "bottle/${BOTTLE_TGZ_FILE}#$(basename ${BOTTLE_TGZ_FILE})"
 done
 
 rm -fr build

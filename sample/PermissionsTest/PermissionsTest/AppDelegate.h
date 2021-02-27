@@ -2,7 +2,7 @@
 //  AppDelegate.h
 //  PermissionsTest
 //
-//  Created by Leo Natan (Wix) on 12/9/18.
+//  Created by Leo Natan on 12/9/18.
 //  Copyright © 2018 Leo Natan. All rights reserved.
 //
 

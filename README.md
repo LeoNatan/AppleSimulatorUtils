@@ -6,7 +6,7 @@ A collection of utils for Apple simulators.
 Install [brew](https://brew.sh), then:
 
 ```shell
-brew tap wix/brew
+brew tap LeoNatan/tap
 brew install applesimutils
 ```
 
@@ -67,5 +67,10 @@ Available Permissions:
 ## Troubleshooting
 
 - In case an installation fails, make sure to update your command line tools in the System Update system preference pane of your Mac
-- If Homebrew complains about a conflict in the `wix/brew` tap, run `brew untap wix/brew && brew tap wix/brew` and try installing again
+- If Homebrew complains about a conflict in the `LeoNatan/tap` tap, run `brew untap LeoNatan/tap && brew tap LeoNatan/tap` and try installing again
 - If installation still fails, **run `brew doctor` and fix all issues & warnings**
+
+## Acknowledgements
+
+Originally developed by me for Wix.
+

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,11 +19,11 @@
 		393510461FCB9A1E001FB466 /* GBOptionsHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3935103F1FCB9A1E001FB466 /* GBOptionsHelper.m */; };
 		393510471FCB9A1E001FB466 /* GBCommandLineParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 393510401FCB9A1E001FB466 /* GBCommandLineParser.m */; };
 		393510481FCB9A1E001FB466 /* GBPrint.m in Sources */ = {isa = PBXBuildFile; fileRef = 393510431FCB9A1E001FB466 /* GBPrint.m */; };
+		393BF41D25EA6CCA00066B69 /* LNLogging.m in Sources */ = {isa = PBXBuildFile; fileRef = 393BF41B25EA6CCA00066B69 /* LNLogging.m */; };
 		39470A6C22BA879F00BDFA5C /* libFMDB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 39470A6122BA878700BDFA5C /* libFMDB.a */; };
 		395046D51EA725FF00557294 /* SetLocationPermission.m in Sources */ = {isa = PBXBuildFile; fileRef = 395046D41EA725FF00557294 /* SetLocationPermission.m */; };
 		395046D81EA72F1000557294 /* SimUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 395046D71EA72F1000557294 /* SimUtils.m */; };
 		39676AD61F94BE4100018548 /* ClearKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 39676AD51F94BE4100018548 /* ClearKeychain.m */; };
-		39A57000258F3FF90067D86B /* DTXLogging.m in Sources */ = {isa = PBXBuildFile; fileRef = 39A56FFF258F3FF90067D86B /* DTXLogging.m */; };
 		39EAF80624E2F008003F86C3 /* NSTask+InputOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 39EAF80524E2F008003F86C3 /* NSTask+InputOutput.m */; };
 /* End PBXBuildFile section */
 
@@ -108,7 +108,6 @@
 		391EBF2F1E911CAA0009AACD /* SetServicePermission.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetServicePermission.h; sourceTree = "<group>"; };
 		391EBF301E911CAA0009AACD /* SetServicePermission.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetServicePermission.m; sourceTree = "<group>"; };
 		391EBF371E91212B0009AACD /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
-		392AFBA522BA9149007E0F15 /* Swiftier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Swiftier.h; sourceTree = "<group>"; };
 		392AFBA622BA915A007E0F15 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		392AFBAF22BAB9E0007E0F15 /* SetHealthKitPermission.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetHealthKitPermission.h; sourceTree = "<group>"; };
 		392AFBB022BAB9E0007E0F15 /* SetHealthKitPermission.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SetHealthKitPermission.m; sourceTree = "<group>"; };
@@ -125,6 +124,9 @@
 		393510421FCB9A1E001FB466 /* GBOptionsHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GBOptionsHelper.h; path = ../../ObjCCLIInfra/GBCli/GBCli/src/GBOptionsHelper.h; sourceTree = "<group>"; };
 		393510431FCB9A1E001FB466 /* GBPrint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GBPrint.m; path = ../../ObjCCLIInfra/GBCli/GBCli/src/GBPrint.m; sourceTree = "<group>"; };
 		393510441FCB9A1E001FB466 /* GBSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GBSettings.h; path = ../../ObjCCLIInfra/GBCli/GBCli/src/GBSettings.h; sourceTree = "<group>"; };
+		393BF41125EA6C8300066B69 /* Swiftier.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Swiftier.h; path = ../../LNObjectiveCHelpers/Swiftier.h; sourceTree = "<group>"; };
+		393BF41B25EA6CCA00066B69 /* LNLogging.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LNLogging.m; path = ../../ObjCCLIInfra/LNLoggingInfra/LNLogging.m; sourceTree = "<group>"; };
+		393BF41C25EA6CCA00066B69 /* LNLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LNLogging.h; path = ../../ObjCCLIInfra/LNLoggingInfra/LNLogging.h; sourceTree = "<group>"; };
 		39470A5422BA878700BDFA5C /* fmdb.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = fmdb.xcodeproj; path = ../../fmdb/fmdb.xcodeproj; sourceTree = "<group>"; };
 		395046D31EA725FF00557294 /* SetLocationPermission.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetLocationPermission.h; sourceTree = "<group>"; };
 		395046D41EA725FF00557294 /* SetLocationPermission.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetLocationPermission.m; sourceTree = "<group>"; };
@@ -132,9 +134,7 @@
 		395046D71EA72F1000557294 /* SimUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimUtils.m; sourceTree = "<group>"; };
 		39676AD41F94BE4100018548 /* ClearKeychain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClearKeychain.h; sourceTree = "<group>"; };
 		39676AD51F94BE4100018548 /* ClearKeychain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClearKeychain.m; sourceTree = "<group>"; };
-		39A56FF8258F3FF90067D86B /* DTXLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DTXLogging.h; path = ../../ObjCCLIInfra/DTXLoggingInfra/DTXLogging.h; sourceTree = "<group>"; };
-		39A56FFF258F3FF90067D86B /* DTXLogging.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DTXLogging.m; path = ../../ObjCCLIInfra/DTXLoggingInfra/DTXLogging.m; sourceTree = "<group>"; };
-		39A57002258F416F0067D86B /* DTXLoggingSubsystem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DTXLoggingSubsystem.h; sourceTree = "<group>"; };
+		39A57002258F416F0067D86B /* LNLoggingSubsystem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LNLoggingSubsystem.h; sourceTree = "<group>"; };
 		39EAF80424E2F008003F86C3 /* NSTask+InputOutput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSTask+InputOutput.h"; sourceTree = "<group>"; };
 		39EAF80524E2F008003F86C3 /* NSTask+InputOutput.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSTask+InputOutput.m"; sourceTree = "<group>"; };
 		39FE99C31F8A6B17006DF8EF /* version.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
@@ -176,17 +176,17 @@
 				39470A5322BA878000BDFA5C /* fmdb */,
 				391596FF1E8CDD0500FDD6F5 /* Handlers */,
 				3935103B1FCB9A0D001FB466 /* GBCli */,
-				39A56FF8258F3FF90067D86B /* DTXLogging.h */,
-				39A56FFF258F3FF90067D86B /* DTXLogging.m */,
-				39A57002258F416F0067D86B /* DTXLoggingSubsystem.h */,
+				39A57002258F416F0067D86B /* LNLoggingSubsystem.h */,
+				393BF41C25EA6CCA00066B69 /* LNLogging.h */,
+				393BF41B25EA6CCA00066B69 /* LNLogging.m */,
 				393510371FCB9972001FB466 /* LNLog.h */,
 				393510381FCB9972001FB466 /* LNLog.m */,
 				393510351FCB9972001FB466 /* LNOptionsParser.h */,
 				393510361FCB9972001FB466 /* LNOptionsParser.m */,
 				391596DF1E8CBAA900FDD6F5 /* main.m */,
 				39FE99C31F8A6B17006DF8EF /* version.h */,
-				392AFBA522BA9149007E0F15 /* Swiftier.h */,
 				392AFBA622BA915A007E0F15 /* PrefixHeader.pch */,
+				393BF41125EA6C8300066B69 /* Swiftier.h */,
 				39EAF80424E2F008003F86C3 /* NSTask+InputOutput.h */,
 				39EAF80524E2F008003F86C3 /* NSTask+InputOutput.m */,
 			);
@@ -288,7 +288,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1230;
-				ORGANIZATIONNAME = Wix;
+				ORGANIZATIONNAME = "Leo Natan";
 				TargetAttributes = {
 					391596DB1E8CBAA900FDD6F5 = {
 						CreatedOnToolsVersion = 8.3;
@@ -297,7 +297,7 @@
 				};
 			};
 			buildConfigurationList = 391596D71E8CBAA900FDD6F5 /* Build configuration list for PBXProject "applesimutils" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -384,6 +384,7 @@
 				395046D51EA725FF00557294 /* SetLocationPermission.m in Sources */,
 				392AFBB122BAB9E0007E0F15 /* SetHealthKitPermission.m in Sources */,
 				393510461FCB9A1E001FB466 /* GBOptionsHelper.m in Sources */,
+				393BF41D25EA6CCA00066B69 /* LNLogging.m in Sources */,
 				391EBF311E911CAA0009AACD /* SetServicePermission.m in Sources */,
 				39EAF80624E2F008003F86C3 /* NSTask+InputOutput.m in Sources */,
 				393510481FCB9A1E001FB466 /* GBPrint.m in Sources */,
@@ -391,7 +392,6 @@
 				391596E01E8CBAA900FDD6F5 /* main.m in Sources */,
 				395046D81EA72F1000557294 /* SimUtils.m in Sources */,
 				391597021E8CDD1D00FDD6F5 /* SetNotificationsPermission.m in Sources */,
-				39A57000258F3FF90067D86B /* DTXLogging.m in Sources */,
 				393510391FCB9972001FB466 /* LNOptionsParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

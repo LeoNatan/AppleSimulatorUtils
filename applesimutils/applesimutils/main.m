@@ -2,8 +2,8 @@
 //  main.m
 //  applesimutils
 //
-//  Created by Leo Natan (Wix) on 30/03/2017.
-//  Copyright © 2017 Wix. All rights reserved.
+//  Created by Leo Natan on 30/03/2017.
+//  Copyright © 2017-2021 Leo Natan. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -510,7 +510,7 @@ int main(int argc, const char* argv[]) {
 		
 		LNUsageSetAdditionalStrings(@[
 			@"",
-			@"For more features, open an issue at https://github.com/wix/AppleSimulatorUtils",
+			@"For more features, open an issue at https://github.com/LeoNatan/AppleSimulatorUtils",
 			@"Pull-requests are always welcome!"
 		]);
 		

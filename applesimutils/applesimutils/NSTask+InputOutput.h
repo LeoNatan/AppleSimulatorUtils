@@ -2,8 +2,8 @@
 //  NSTask+InputOutput.h
 //  applesimutils
 //
-//  Created by Leo Natan (Wix) on 8/11/20.
-//  Copyright © 2020 Wix. All rights reserved.
+//  Created by Leo Natan on 8/11/20.
+//  Copyright © 2017-2021 Leo Natan. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

@@ -2,8 +2,8 @@
 //  SetHealthKitPermission.m
 //  applesimutils
 //
-//  Created by Leo Natan (Wix) on 6/19/19.
-//  Copyright © 2019 Wix. All rights reserved.
+//  Created by Leo Natan on 6/19/19.
+//  Copyright © 2017-2021 Leo Natan. All rights reserved.
 //
 
 #import "SetHealthKitPermission.h"
@@ -35,7 +35,7 @@
 	
 	while (!success)
 	{
-		dtx_defer {
+		ln_defer {
 			if(success == NO)
 			{
 				debug_log(@"Retrying in one second");
@@ -53,7 +53,7 @@
 		}
 		
 		FMDatabase* db = [[FMDatabase alloc] initWithURL:healthURL];
-		dtx_defer {
+		ln_defer {
 			if(db.isOpen == YES)
 			{
 				[db close];
@@ -67,7 +67,7 @@
 		
 		FMResultSet* resultSet;
 		id rowID = nil;
-		dtx_defer {
+		ln_defer {
 			if(resultSet != nil)
 			{
 				[resultSet close];
@@ -95,7 +95,7 @@
 			[uuid getUUIDBytes:uuidData.mutableBytes];
 			
 			FMResultSet* syncAnchorResultSet = nil;
-			dtx_defer {
+			ln_defer {
 				if(syncAnchorResultSet != nil)
 				{
 					[syncAnchorResultSet close];

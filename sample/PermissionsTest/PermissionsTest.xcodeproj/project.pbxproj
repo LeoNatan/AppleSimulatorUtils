@@ -168,7 +168,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = "/bin/sh -e";
-			shellScript = "# applesimutils --byId \"${TARGET_DEVICE_IDENTIFIER}\" --setPermissions \"calendar=YES,location=inuse,notifications=YES\" --bundle com.wix.PermissionsTest\n";
+			shellScript = "# applesimutils --byId \"${TARGET_DEVICE_IDENTIFIER}\" --setPermissions \"calendar=YES,location=inuse,notifications=YES\" --bundle com.LeoNatan.PermissionsTest\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -331,7 +331,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.wix.PermissionsTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.LeoNatan.PermissionsTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -352,7 +352,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.wix.PermissionsTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.LeoNatan.PermissionsTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";

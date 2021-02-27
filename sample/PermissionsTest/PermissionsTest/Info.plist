@@ -22,8 +22,6 @@
 	<true/>
 	<key>NSCalendarsUsageDescription</key>
 	<string>Davai</string>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>Zan-Gief</string>
 	<key>NSHealthShareUsageDescription</key>
 	<string>My heart will go on...</string>
 	<key>NSHealthUpdateUsageDescription</key>
@@ -32,6 +30,8 @@
 	<string>Gief</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Come on</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Zan-Gief</string>
 	<key>NSUserTrackingUsageDescription</key>
 	<string>Stalker Alert!!1</string>
 	<key>UILaunchStoryboardName</key>

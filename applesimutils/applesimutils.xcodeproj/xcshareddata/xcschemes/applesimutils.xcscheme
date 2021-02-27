@@ -76,7 +76,7 @@
             isEnabled = "NO">
          </CommandLineArgument>
          <CommandLineArgument
-            argument = "--bundle &quot;com.wix.PermissionsTest&quot;"
+            argument = "--bundle &quot;com.LeoNatan.PermissionsTest&quot;"
             isEnabled = "NO">
          </CommandLineArgument>
          <CommandLineArgument
