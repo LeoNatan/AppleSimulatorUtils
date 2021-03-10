@@ -53,6 +53,14 @@
       <CommandLineArguments>
          <CommandLineArgument
             argument = "--booted"
+            isEnabled = "YES">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "--setLocation &quot;[51.51915, -3.12907]&quot;"
+            isEnabled = "YES">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "--setLocation none"
             isEnabled = "NO">
          </CommandLineArgument>
          <CommandLineArgument
@@ -117,7 +125,7 @@
          </CommandLineArgument>
          <CommandLineArgument
             argument = "--list"
-            isEnabled = "YES">
+            isEnabled = "NO">
          </CommandLineArgument>
          <CommandLineArgument
             argument = "--restartSB"

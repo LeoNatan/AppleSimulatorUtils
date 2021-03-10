@@ -24,6 +24,7 @@
 		395046D51EA725FF00557294 /* SetLocationPermission.m in Sources */ = {isa = PBXBuildFile; fileRef = 395046D41EA725FF00557294 /* SetLocationPermission.m */; };
 		395046D81EA72F1000557294 /* SimUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 395046D71EA72F1000557294 /* SimUtils.m */; };
 		39676AD61F94BE4100018548 /* ClearKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 39676AD51F94BE4100018548 /* ClearKeychain.m */; };
+		3976E9AC25F8C16C00E4BD78 /* SetSimulatorLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3976E9AB25F8C16C00E4BD78 /* SetSimulatorLocation.m */; };
 		39EAF80624E2F008003F86C3 /* NSTask+InputOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 39EAF80524E2F008003F86C3 /* NSTask+InputOutput.m */; };
 /* End PBXBuildFile section */
 
@@ -134,6 +135,8 @@
 		395046D71EA72F1000557294 /* SimUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimUtils.m; sourceTree = "<group>"; };
 		39676AD41F94BE4100018548 /* ClearKeychain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClearKeychain.h; sourceTree = "<group>"; };
 		39676AD51F94BE4100018548 /* ClearKeychain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClearKeychain.m; sourceTree = "<group>"; };
+		3976E9AA25F8C16C00E4BD78 /* SetSimulatorLocation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetSimulatorLocation.h; sourceTree = "<group>"; };
+		3976E9AB25F8C16C00E4BD78 /* SetSimulatorLocation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SetSimulatorLocation.m; sourceTree = "<group>"; };
 		39A57002258F416F0067D86B /* LNLoggingSubsystem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LNLoggingSubsystem.h; sourceTree = "<group>"; };
 		39EAF80424E2F008003F86C3 /* NSTask+InputOutput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSTask+InputOutput.h"; sourceTree = "<group>"; };
 		39EAF80524E2F008003F86C3 /* NSTask+InputOutput.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSTask+InputOutput.m"; sourceTree = "<group>"; };
@@ -210,6 +213,8 @@
 				391EBF301E911CAA0009AACD /* SetServicePermission.m */,
 				395046D61EA72F1000557294 /* SimUtils.h */,
 				395046D71EA72F1000557294 /* SimUtils.m */,
+				3976E9AA25F8C16C00E4BD78 /* SetSimulatorLocation.h */,
+				3976E9AB25F8C16C00E4BD78 /* SetSimulatorLocation.m */,
 			);
 			name = Handlers;
 			sourceTree = "<group>";
@@ -388,6 +393,7 @@
 				391EBF311E911CAA0009AACD /* SetServicePermission.m in Sources */,
 				39EAF80624E2F008003F86C3 /* NSTask+InputOutput.m in Sources */,
 				393510481FCB9A1E001FB466 /* GBPrint.m in Sources */,
+				3976E9AC25F8C16C00E4BD78 /* SetSimulatorLocation.m in Sources */,
 				39676AD61F94BE4100018548 /* ClearKeychain.m in Sources */,
 				391596E01E8CBAA900FDD6F5 /* main.m in Sources */,
 				395046D81EA72F1000557294 /* SimUtils.m in Sources */,
