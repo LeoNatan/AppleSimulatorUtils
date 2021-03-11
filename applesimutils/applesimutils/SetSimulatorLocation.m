@@ -12,6 +12,8 @@
 
 + (void)setLatitude:(double)latitude longitude:(double)longitude forSimulatorUDIDs:(NSArray<NSString*>*)udids
 {
+	LNLog(LNLogLevelDebug, @"Setting simulator location");
+	
 	[NSDistributedNotificationCenter.defaultCenter postNotificationName:@"com.apple.iphonesimulator.simulateLocation" object:nil userInfo:@{
 		@"simulateLocationLatitude": @(latitude),
 		@"simulateLocationLongitude": @(longitude),
@@ -21,6 +23,8 @@
 
 + (void)clearLocationForSimulatorUDIDs:(NSArray<NSString *> *)udids
 {
+	LNLog(LNLogLevelDebug, @"Clearing simulator location");
+	
 	[NSDistributedNotificationCenter.defaultCenter postNotificationName:@"com.apple.iphonesimulator.simulateLocation" object:nil userInfo:@{
 		@"simulateLocationDevices": udids,
 	}];
